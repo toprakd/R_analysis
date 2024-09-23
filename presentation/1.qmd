@@ -8,7 +8,7 @@ editor: visual
 
 -   Phase II Open label Clinical trial Multicenter (HUS, Haugesund,
 
--    Førde, Stavanger, Ahus, St. Olav and UNN)
+-   Førde, Stavanger, Ahus, St. Olav and UNN)
 
 -   201 patients included from 2016-2018
 
@@ -22,13 +22,7 @@ editor: visual
 
 ## Arm E & F
 
-Her2+
-
-![](images/clipboard-2762492978.png){width="253"}
-
 ![](images/clipboard-2260992845.png)
-
-## 
 
 ```{r}
 # Load necessary library
@@ -43,21 +37,32 @@ data <- data.frame(
 
 # Create table using gt
 gt_table <- gt(data) %>%
-  tab_header(
-    title = ""
-  ) %>%
   cols_label(
-    PAM50_Subtype = html("<div style='transform: rotate(-90deg); white-space: nowrap;'>PAM50 Subtype</div>"),
+    PAM50_Subtype = "PAM50 Subtype",
     Arm_E = "Arm E",
     Arm_F = "Arm F"
   ) %>%
   tab_options(
     table.align = "center",
-    column_labels.font.size = 12
-  )
+    column_labels.font.size = 12,
+    table.font.size = 12,
+    table.border.top.width = px(1),
+    table.border.bottom.width = px(1)
+  ) %>%
+  tab_style(
+    style = cell_borders(sides = "all", weight = px(1)),
+    locations = cells_body()
+  ) %>%
+  tab_style(
+    style = cell_borders(sides = "bottom", weight = px(2)),
+    locations = cells_column_labels()
+  ) %>%
+  tab_options(table.font.names = "Arial")
 
 # Display table
 gt_table
+
+
 
 
 ```
@@ -70,6 +75,8 @@ When you click the **Render** button a document will be generated that includes:
 -   Output from executable code
 
 ## Code
+
+![](images/clipboard-3288495661.png)
 
 When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
 
