@@ -4,11 +4,63 @@ format: revealjs
 editor: visual
 ---
 
-## Quarto
+## PETREMAC TRIAL
 
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+-   Phase II Open label Clinical trial Multicenter (HUS, Haugesund,
+
+-    Førde, Stavanger, Ahus, St. Olav and UNN)
+
+-   201 patients included from 2016-2018
+
+-   Large T2 (\>4cm) or locally advanced breast cancers Neoadjuvant treatment
 
 \~
+
+## Desing
+
+![](images/clipboard-1185391746.png)
+
+## Arm E & F
+
+Her2+
+
+![](images/clipboard-2762492978.png){width="253"}
+
+![](images/clipboard-2260992845.png)
+
+## 
+
+```{r}
+# Load necessary library
+library(gt)
+
+# Data for the table
+data <- data.frame(
+  PAM50_Subtype = c("Luminal A", "Luminal B", "HER2-enriched", "Basal-like", "Normal-like", "No RNA"),
+  Arm_E = c("9 (26%)", "7 (20%)", "10 (29%)", "1 (2.9%)", "7 (20%)", "1 (2.9%)"),
+  Arm_F = c("3 (12%)", "2 (7.7%)", "16 (62%)", "3 (12%)", "0 (0%)", "2 (7.7%)")
+)
+
+# Create table using gt
+gt_table <- gt(data) %>%
+  tab_header(
+    title = ""
+  ) %>%
+  cols_label(
+    PAM50_Subtype = html("<div style='transform: rotate(-90deg); white-space: nowrap;'>PAM50 Subtype</div>"),
+    Arm_E = "Arm E",
+    Arm_F = "Arm F"
+  ) %>%
+  tab_options(
+    table.align = "center",
+    column_labels.font.size = 12
+  )
+
+# Display table
+gt_table
+
+
+```
 
 ## Bullets
 
