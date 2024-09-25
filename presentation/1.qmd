@@ -14,6 +14,10 @@ editor: visual
 
 -   Large T2 (\>4cm) or locally advanced breast cancers Neoadjuvant treatment
 
+Hello My name is Toprak.I am a PhD candidate. I have started my phd 1 years ago. I am a molecular biologist. And, I have a Master degree in Tumor Immunology. Today, I will talk about the study I'm working on; titled by Immune-Dependent Mechanisms of Anti-Her2 Therapy on PETREMAC trial.
+
+Feel free to ask any questions during my presentation.
+
 \~
 
 ## Desing
@@ -22,7 +26,15 @@ editor: visual
 
 ## Arm E & F
 
+HER2, or human epidermal growth factor receptor 2, is a protein overexpressed in 15-20% of breast cancers. This overexpression is linked to aggressive cancer behavior, higher recurrence rates, and poorer survival outcomes. Targeting HER2 with therapies like Trastuzumab and Pertuzumab has transformed the treatment landscape, as these drugs not only block HER2 signaling but also harness the immune system to attack cancer cells. Despite the significant benefits of these therapies, resistance to treatment still occurs, and ongoing research is focused on understanding and overcoming this challenge.
+
+![](images/clipboard-3670444070.png)
+
+The PETREMAC trial stratifies HER2-positive breast cancer patients based on TP53 mutation status. After a biopsy and genetic analysis, patients are assigned to either Arm E (TP53 wild-type) or Arm F (TP53 mutated). In Arm E, patients receive a combination of Pertuzumab, Trastuzumab, and Docetaxel. Those in Arm F, with TP53 mutations, receive an additional drug, Cyclophosphamide. After 10 weeks of primary treatment, tumor response is evaluated. If resistance is detected, patients move to secondary treatment with Epirubicin and undergo further biopsies to monitor response and resistance mechanisms.
+
 ![](images/clipboard-2260992845.png)
+
+![](images/clipboard-2749457016.png)
 
 ```{r}
 # Load necessary library
@@ -69,10 +81,32 @@ gt_table
 
 ## Bullets
 
-When you click the **Render** button a document will be generated that includes:
+When
 
 -   Content authored with markdown
--   Output from executable code
+-   By studying how immune cells and tumor infiltrating lymphocytes (TILs) interact with therapy, we aim to uncover why some patients benefit from therapy while others develop resistance.
+-   ![](images/clipboard-1842105691.png)
+-   This slide highlights the research methodology used in the project, leveraging advanced genomic tools and biobanks. Whole Genome Sequencing and Transcriptome Sequencing are employed to track mutations and gene expression across different timepoints in therapy. Our biobanks, derived from clinical trials such as PETREMAC and DDP, provide crucial pre- and post-treatment biopsies for this analysis. Furthermore, immunohistochemical techniques are used to analyze the presence and dynamics of immune cells within the tumor microenvironment, focusing on key players like TILs and macrophages. These approaches enable a comprehensive understanding of both tumor evolution and immune system interactions during treatment.
+
+## Neoantigens
+
+![](images/clipboard-2155123520.png)
+
+This slide delves into the role of neoantigens, which are tumor-specific antigens formed by mutations. These neoantigens can provoke the immune system to recognize and attack cancer cells, making them a critical factor in enhancing the effectiveness of anti-Her2 therapies. Tumors with a higher neoantigen load may have better responses to these therapies, as neoantigens act as flags that attract immune cells. Understanding the presence and role of neoantigens in tumors can lead to improved predictions of therapy outcomes and personalized treatment plans for patients with Her2-positive breast cancer.
+
+## design of the PETREMAC trial
+
+## ![](images/clipboard-3927802335.png)
+
+This slide outlines the design of the PETREMAC trial, focusing on its use of dual anti-Her2 therapy with Trastuzumab and Pertuzumab. The trial enrolled 60 patients with HER2-positive breast cancer, providing a comprehensive biobank for studying treatment efficacy. With a strong focus on personalized medicine, biopsies collected before and after treatment allow researchers to study the evolution of tumors and the immune response. The trial saw a notable 48.3% of patients achieving a pathological complete response, a key marker of long-term survival. These findings serve as a foundation for deeper analyses of treatment resistance and sensitivity.
+
+This slide highlights two key anti-HER2 drugs, Trastuzumab and Pertuzumab, and their mechanisms of action in treating HER2-positive breast cancer. Trastuzumab blocks the HER2 receptor, preventing downstream signaling that promotes tumor growth. Additionally, it stimulates the immune system to attack cancer cells via antibody-dependent cellular cytotoxicity (ADCC). Pertuzumab complements this action by preventing HER2 from dimerizing with other HER receptors, further blocking tumor proliferation. Together, these drugs inhibit cancer cell growth while simultaneously engaging the immune system for a comprehensive anti-tumor response.
+
+## ADCC
+
+![](images/clipboard-2415977912.png)
+
+Antibody-dependent cellular cytotoxicity (ADCC) plays a vital role in the efficacy of anti-Her2 therapies like Trastuzumab and Pertuzumab. These antibodies bind to HER2 receptors on cancer cells, acting as a signal for immune cells like NK cells and macrophages to engage. Once bound, NK cells release toxic substances that kill the cancer cells, while macrophages engulf and digest them. This immune-driven mechanism amplifies the direct blocking of HER2 signaling, making ADCC a critical component of successful cancer treatment with these drugs.
 
 ## Code
 
@@ -192,6 +226,6 @@ When you click the **Render** button a presentation will be generated that inclu
 
 -   **Boosting survivorship and quality of life**: Effective, personalized treatments not only improve survival but also reduce the physical and emotional burden of treatment on patients, helping them return to normal life.
 
-<https://www.popai.pro/share.html?shareKey=d18d63740884156795ca20e54be846c42a1aa3ec7d4a95e896b24402ac00b309&utm_source=presentationsharepage>
+<https://www.popai.pro/share.html?shareKey=d18d63740884156795ca20e54be846c42a1aa3ec7d4a95e896b24402ac00b309&utm_source=presentationsharepage> (same like in the outline)
 
-<https://slidesgpt.com/l/VSjC>
+<https://slidesgpt.com/l/VSjC>. done
